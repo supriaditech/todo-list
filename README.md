@@ -203,8 +203,39 @@ DELETE http://localhost:3001/api/todo/1
 - **Separation of Concerns**
   Logic bisnis dipisahkan dari UI menggunakan pattern **Service & Custom Hooks** (`useTodos`). Ini membuat kode React lebih bersih (clean code) dan mudah di-maintenance.
 
+## 📸 Preview Aplikasi
+
+Berikut adalah tampilan antarmuka dari aplikasi Todo List:
+
+### 1. Halaman List
+
+Menampilkan daftar tugas dengan fitur pencarian.
+![Halaman List](https://github.com/user-attachments/assets/95ddb465-4913-431c-815e-741b3fb96ba3)
+
+<br>
+
+### 2. Modal Create
+
+Popup untuk menambahkan tugas baru.
+![Modal Create](https://github.com/user-attachments/assets/89219c5b-b997-4dad-9b13-4761c53384ea)
+
+<br>
+
+### 3. Modal Update
+
+Popup untuk mengedit judul atau deskripsi tugas.
+![Modal Update](https://github.com/user-attachments/assets/c9c9a134-30a6-408a-ae2e-25cc4d7c71dd)
+
+<br>
+
+### 4. Modal Delete
+
+Konfirmasi keamanan sebelum menghapus data.
+![Modal Delete](https://github.com/user-attachments/assets/256d7576-f4a6-439f-90e1-ff72a4ef5854)
+
+---
+
 ## 👥 Authors
 
 - **[Supriadi](https://github.com/supriaditech)** - _Fullstack Developer_
   [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/supriaditech)
-"# todo-list" 
