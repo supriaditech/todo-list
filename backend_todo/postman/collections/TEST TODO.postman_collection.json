@@ -1,0 +1,230 @@
+{
+  "info": {
+    "_postman_id": "1238e9e2-41e9-4315-91c0-0b77f5a401aa",
+    "name": "TEST TODO",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "CREATE",
+      "id": "a4668b3f-e08e-4111-8217-5694797c0d9d",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"tes1\",\r\n    \"description\":\"Lorem ilsum\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/todo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "todo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE",
+      "id": "05e538c1-594f-4f49-b710-9c18d835e9da",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"tes1 UPDATE\",\r\n    \"description\":\"Lorem ilsum\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/todo/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "todo",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL",
+      "id": "c9524164-cc37-4777-a632-fb8059c78224",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"te \"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/todo?search&page=1&limit=4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "todo"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": null
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TOOGLE",
+      "id": "7e8bf5ea-895d-4839-a5b9-a17447741309",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/todo/1/toggle",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "todo",
+            "1",
+            "toggle"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE",
+      "id": "e1033fd8-9e16-440d-88fe-718cb3d98cb1",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"te \"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/todo/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "todo",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET DETAIL",
+      "id": "3a248b53-cedb-4ea1-83aa-d4cbdc5cf3b8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"te \"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/todo/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "todo",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
